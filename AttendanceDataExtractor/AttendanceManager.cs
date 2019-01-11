@@ -249,29 +249,6 @@ namespace AttendanceDataExtractor
                     _accessEventsCollection.InsertOne(item);
                     return;
                 }
-                /*
-                var existing = GetAllAccessEvents();
-                foreach (var d in existing)
-                {
-                    //if(String.IsNullOrEmpty(item.EmployeeFirstName))
-                    //{
-                    //    return;
-                    //}
-                    if(d.EmployeeID == 0)
-                    {
-                        continue;
-                    }
-                    if (d.AccessPointID == item.AccessPointID &&
-                        d.AccessPointName == item.AccessPointName &&
-                        d.EmployeeID == item.EmployeeID &&
-                        d.EmployeeFirstName == item.EmployeeFirstName &&
-                        d.EmployeeLastName == item.EmployeeLastName &&
-                        d.EventTime == item.EventTime)
-                    {
-                        return;
-                    }
-                }*/
-                //_accessEventsCollection.InsertOne(item);
             }
             catch (Exception ex)
             {
@@ -314,25 +291,6 @@ namespace AttendanceDataExtractor
             }
             return null;
         }
-
-        //internal static void LoadUsersToDB()
-        //{
-        //    var client = new MongoClient("mongodb://localhost:27017");
-        //    var database = client.GetDatabase("AuthDB");
-        //    var collection = database.GetCollection<User>("Users");
-
-        //    foreach (var v in Employees)
-        //    {
-        //        var user = new User()
-        //        {
-        //            ID = v.ID,
-        //            UserName = v.FirstName + "." + v.LastName,
-        //            Email = v.FirstName + "." + v.LastName + "@Klingelnberg.com",
-        //            PasswordHash = ToSha256(v.FirstName + "$xyz987")
-        //        };
-        //        collection.InsertOne(user);
-        //    }
-        //}
 
         internal static string ToSha256(string input)
         {
