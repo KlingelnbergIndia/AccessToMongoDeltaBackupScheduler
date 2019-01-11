@@ -1,9 +1,9 @@
-﻿using Models.Core.Helpers;
+﻿using Models.Standard.Helpers;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
 
-namespace Models.Core.Authentication
+namespace Models.Standard.Authentication
 {
     public class User
     {

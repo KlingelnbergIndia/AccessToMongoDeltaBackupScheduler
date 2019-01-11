@@ -2,9 +2,9 @@
 using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
 using MongoDB.Bson;
-using Models.Core.Helpers;
+using Models.Standard.Helpers;
 
-namespace Models.Core
+namespace Models.Standard
 {
     public class Address
     {

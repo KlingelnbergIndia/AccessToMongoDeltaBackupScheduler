@@ -1,7 +1,7 @@
 ﻿using AttendanceDataExtractor.ApplicationLogGenerator;
-using Models.Core.Employment;
-using Models.Core.HR.Attendance;
-using Models.Core.Operationals;
+using Models.Standard.Employment;
+using Models.Standard.HR.Attendance;
+using Models.Standard.Operationals;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -183,7 +183,7 @@ namespace AttendanceDataExtractor
                 emp.LastName = name.Substring(tokens[0].Length).Trim();
 
                 var gender = row[Gender].ToString();
-                emp.Gender = gender == "Male" ? Models.Core.Gender.Male : Models.Core.Gender.Female;
+                emp.Gender = gender == "Male" ? Models.Standard.Gender.Male : Models.Standard.Gender.Female;
 
                 employees.Add(emp);
             }

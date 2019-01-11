@@ -2,10 +2,10 @@
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 using Newtonsoft.Json;
-using Models.Core.Helpers;
+using Models.Standard.Helpers;
 using System.ComponentModel.DataAnnotations;
 
-namespace Models.Core
+namespace Models.Standard 
 {
     public enum Gender
     {

@@ -1,11 +1,11 @@
-﻿using Models.Core.Employment;
-using Models.Core.Helpers;
+﻿using Models.Standard.Employment;
+using Models.Standard.Helpers;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace Models.Core.Operationals
+namespace Models.Standard.Operationals
 {
     public class Department
     {

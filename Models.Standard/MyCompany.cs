@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Models.Core
+namespace Models.Standard
 {
 
     public class MyCompany : Organization

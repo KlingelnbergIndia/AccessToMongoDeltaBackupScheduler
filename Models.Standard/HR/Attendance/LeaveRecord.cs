@@ -1,10 +1,10 @@
-﻿using Models.Core.Helpers;
+﻿using Models.Standard.Helpers;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace Models.Core.HR.Attendance
+namespace Models.Standard.HR.Attendance
 {
     public class LeaveRecord
     {

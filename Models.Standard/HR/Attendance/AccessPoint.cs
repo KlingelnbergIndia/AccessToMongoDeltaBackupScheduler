@@ -1,4 +1,4 @@
-﻿using Models.Core.Helpers;
+﻿using Models.Standard.Helpers;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.Core.HR.Attendance
+namespace Models.Standard.HR.Attendance
 {
     public class AccessPoint
     {

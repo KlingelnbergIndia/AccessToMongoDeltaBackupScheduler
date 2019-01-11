@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace Models.Framework
+namespace Models.Standard
 {
     public class UserAction
     {

@@ -1,30 +1,32 @@
-﻿using Models.Core.Helpers;
+﻿using Models.Standard.Helpers;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Models.Core.HR.Attendance
+namespace Models.Standard.HR.Attendance
 {
-    public enum RegularizationType
+    public enum LeaveType
     {
-        OutstationDuty,
-        CustomerVisit,
-        VendorVisit,
-        Conference,
-        Exhibition,
-        WorkFromOtherLocation,
-        OfficialWorkOutside,
+        PersonalLeave,
+        SickLeave,
+        PaternalLeave,
+        MaternalLeave,
+        CompensatoryOff,
+        EducationalLeave,
+        Sabattical
     }
 
-    public enum RegularizationStatus
+    public enum LeaveStatus
     {
         Applied,
         Approved,
         Rejected
     }
 
-    public class Regularization
+    public class Leave
     {
         [BsonId]
         [JsonConverter(typeof(ObjectIdConverter))]
@@ -40,9 +42,9 @@ namespace Models.Core.HR.Attendance
 
         public int EmployeeID { get; set; }
 
-        public RegularizationType LeaveType { get; set; }
+        public LeaveType LeaveType { get; set; }
 
-        public RegularizationStatus LeaveStatus { get; set; }
+        public LeaveStatus LeaveStatus { get; set; }
 
         public string Description { get; set; }
     }

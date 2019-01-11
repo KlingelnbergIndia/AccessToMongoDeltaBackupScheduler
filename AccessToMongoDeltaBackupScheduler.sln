@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessToMongoDeltaBackupScheduler", "AttendanceDataExtractor\AccessToMongoDeltaBackupScheduler.csproj", "{50FD6EA6-114D-4229-A8AC-11600F3D2BFE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models.Core", "Models.Core\Models.Core.csproj", "{3535D45A-C958-4532-AFB0-E5ED3D56D063}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models.Standard", "Models.Standard\Models.Standard.csproj", "{113D63A4-2C0C-4986-868F-31B3FCDA5D6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{50FD6EA6-114D-4229-A8AC-11600F3D2BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50FD6EA6-114D-4229-A8AC-11600F3D2BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50FD6EA6-114D-4229-A8AC-11600F3D2BFE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3535D45A-C958-4532-AFB0-E5ED3D56D063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3535D45A-C958-4532-AFB0-E5ED3D56D063}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3535D45A-C958-4532-AFB0-E5ED3D56D063}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3535D45A-C958-4532-AFB0-E5ED3D56D063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{113D63A4-2C0C-4986-868F-31B3FCDA5D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{113D63A4-2C0C-4986-868F-31B3FCDA5D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{113D63A4-2C0C-4986-868F-31B3FCDA5D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{113D63A4-2C0C-4986-868F-31B3FCDA5D6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using AttendanceDataExtractor.ApplicationLogGenerator;
-using Models.Core.Employment;
-using Models.Core.HR.Attendance;
-using Models.Core.Operationals;
+using Models.Standard.Employment;
+using Models.Standard.HR.Attendance;
+using Models.Standard.Operationals;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
