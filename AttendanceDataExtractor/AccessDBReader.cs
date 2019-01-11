@@ -150,7 +150,7 @@ namespace AttendanceDataExtractor
         {
             OleDbCommand command = new OleDbCommand();
             command.Connection = _accessDBconnection;
-            command.CommandText = "select EmployeeName,EmployeeId,EmployeeCode,Gender,DepartmentId from Employees";
+            command.CommandText = "select EmployeeName,EmployeeId,EmployeeCode,Gender,DepartmentId,DOB from Employees";
 
             OleDbDataAdapter da = new OleDbDataAdapter(command);
             DataTable dt = new DataTable();
@@ -161,6 +161,7 @@ namespace AttendanceDataExtractor
             DataColumn EmployeeCode = dt.Columns["EmployeeCode"];
             DataColumn Gender = dt.Columns["Gender"];
             DataColumn DepartmentId = dt.Columns["DepartmentId"];
+            DataColumn BirthDate = dt.Columns["DOB"];
 
             List<Employee> employees = new List<Employee>();
 
@@ -184,6 +185,8 @@ namespace AttendanceDataExtractor
 
                 var gender = row[Gender].ToString();
                 emp.Gender = gender == "Male" ? Models.Standard.Gender.Male : Models.Standard.Gender.Female;
+
+                emp.BirthDate = DateTime.Parse(row[BirthDate].ToString());
 
                 employees.Add(emp);
             }

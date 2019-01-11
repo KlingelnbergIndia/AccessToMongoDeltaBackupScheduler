@@ -184,7 +184,7 @@ namespace AttendanceDataExtractor
 
         static public void AddEmployee(Employee item)
         {
-            string formatedBDate = item.BirthDate.ToString("dd-mm-yyyy");
+            string formatedBDate = item.BirthDate.ToString("dd-MM-yyyy");
             try
             {
                 var existing = GetAllEmployees();
